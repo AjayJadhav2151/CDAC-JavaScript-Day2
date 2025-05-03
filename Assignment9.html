@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms 2</title>
+    <style>
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table border="1" style="border-collapse: collapse;">
+            <tr>
+                <th colspan="2">Visitor Information</th>
+            </tr>
+            <tr>
+                <td><label>Email Address:</label></td>
+                <td><input type="email" name="email" placeholder="Enter Email"></td>
+            </tr>
+            <tr>
+                <td><label>Do you use web for:</label></td>
+                <td><input type="checkbox" name="use"/>Research
+                <input type="checkbox" name="use"/>Purchase</td>
+            </tr>
+            <tr>
+                <td>Occupation:</td>
+                <td>
+                    <select name="Occupation">
+                        <option >--Select--</option>
+                        <option>Teacher</option>
+                        <option>Student</option>
+                        <option>Goverment Officer</option>
+                        <option>Admin</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Want us to send your junk email?</label></td>
+                <td><input type="radio" name="rad">Absolutely
+                    <input type="radio" name="rad">No way, man</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">
+                    <input type="submit" value="SUBMIT" />
+                    </td>
+                    <td>
+                    <input type="reset" value="RESET" />
+                        </td>    
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

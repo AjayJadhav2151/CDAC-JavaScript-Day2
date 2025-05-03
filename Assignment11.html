@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms 4</title>
+    <style>
+        input,textarea{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body style="border: 1px solid black;">
+    <h1 style="color: red;">Express Registration</h1>
+    <p>Please note that all fields that have an asterisk (*) are required to process your Registration</p>
+
+    <form>
+        <table style="border-collapse: collapse; width: 100%">
+            <thead style="background-color: gray; color: white;">
+                <tr>
+                    <th colspan="2">Personal Details</th>
+                    <th colspan="2">Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label>Title:</label></td>
+                    <td><input type="text" name="title">(Mr/Mrs/Miss)</td>
+                    <td><label>Address</label></td>
+                    <td><input type="text" name="address">*</td>
+                </tr>
+                <tr>
+                    <td><label>First Name: </label></td>
+                    <td><input type="text" name="fname">*</td>
+                    <td></td>
+                    <td><input type="text" name="address"></td>
+                </tr>
+                <tr>
+                    <td><label>Last Name:</label></td>
+                    <td><input type="text" name="lname">*</td>
+                    <td><label>Town</label></td>
+                    <td><input type="text" name="town">*</td>
+                </tr>
+                <tr>
+                    <td><label>Email Address</label></td>
+                    <td><input type="email" name="email">*</td>
+                    <td><label>County/State:</label></td>
+                    <td><input type="text" name="State">*</td>
+                </tr>
+                <tr>
+                    <td><label>Telephone:</label></td>
+                    <td><input type="number" name="no">*</td>
+                    <td><label>Country:</label></td>
+                    <td  colspan="2">
+                        <select name="Country:">
+                            <option>--Select--</option>
+                            <option>USA</option>
+                            <option>India</option>
+                            <option>UK</option>
+                            <option>Russia</option>
+                        </select>*
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Cell Phone:</label></td>
+                    <td><input type="number" name="cno"></td>
+                    <td><label>Postcode:</label></td>
+                    <td><input type="number" name="pno">*</td>
+                </tr>
+                <tr>
+                    <td><label>Comment</label></td>
+                    <td colspan="6"><textarea rows="4" cols="50" name="Comment"></textarea></td>
+                </tr>
+                <tr style="border: 6px solid green;">
+                    <td><label>Feedback</label></td>
+                    <td><input type="text" name="feedback"></td>
+                    <td><label>Hear us From?</label></td>
+                    <td><input type="checkbox" name="feed" />Friend
+                        <input type="checkbox" name="feed" />Site Owner
+                        <input type="checkbox" name="feed" />Search Engine
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr style="background-color: gray; color: white; text-align: left;">
+                    <th  colspan="4">Security Details</th>
+                </tr>
+                <tr>
+                    <td><label>Choose Password:</label></td>
+                    <td><input type="password" name="pwd">*</td>
+                    <td><label>Confirm Password:</label></td>
+                    <td><input type="password" name="pwd">*</td>
+                    
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+
+</html>
